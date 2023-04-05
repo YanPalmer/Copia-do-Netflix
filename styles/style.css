@@ -1,31 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto+Flex:wght@100;700&display=swap');
+/* 'Outfit', sans-serif;
+'Roboto Flex', sans-serif;
+ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50%, rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.8)),
+    url(/Imagens/background-netflix.jpg);
+    
+}
 /* Header */
+body header {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0, 0.7) 55%, rgba(0, 0, 0, 0));
+}
 header nav {
     position: relative;
-    background-color: greenyellow;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 80px;
-    padding: 0 32px;
+    padding: 0 160px;
 }
+/* Logo */
 header nav div.logo {
     position: relative;
     justify-content: center;
     align-items: center;
 }
 header nav div.logo img {
-    width: 89px;
-    height: 24px;
+    width: 148px;
+    height: 80px;
 }
-
+/* Botões */
 header nav div.botoes {
     display: flex;
     justify-content: flex-end;
@@ -34,18 +54,89 @@ header nav div.botoes {
 header nav div.botoes button {
     width: 148px;
     height: 32px;
+    margin-right: 18px;
+    height: 2.2em;
+    color: #fff;
+    border-radius: 4px;
 }
 
-
+header nav div.botoes .botao_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 22em;
+    background-color: rgba(22,22,22,0.7);
+    border: 1px solid rgba(255,255,255,0.7);
+}
+.botao_1, .botao_2 {
+    font-weight: 600;
+}
+header nav div.botoes .botao_2 {
+    width: 12em;
+    background-color: rgb(229,9,20);
+    border: none;
+}
+header nav div.botoes .botao_1 img {
+    width: 16px;
+    height: 16px;
+}
 
 
 
 /* Section */
-section {
+.section_1 {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 100vh;
-    background-color: cyan;
+    color: #fff;
 }
-/* section div.main_section {
-
-} */
+/* Caixa da section */
+.section_1 .main_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 50px;
+}
+.section_1 .main_section h1 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 3.4rem;
+    font-weight: 900;
+}
+.section_1 .main_section > h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    margin-top: 15px;
+}
+/* Formulário */
+.section_1 .main_section .formulario {
+    margin-top: 25px;
+}
+.section_1 .main_section .formulario h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    font-size: 22px;   
+}
+.section_1 .main_section .formulario form {
+    margin: 12px 0 0 -30px;
+}
+.section_1 .main_section .formulario form .form_box {
+    height: 3.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+.section_1 .main_section .formulario form input {
+    width: 24rem;
+    background-color: rgba(22, 22, 22, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+.section_1 .main_section .formulario form button {
+    width: 12rem;
+    background-color: rgb(229,9,20);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
