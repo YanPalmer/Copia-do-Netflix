@@ -24,6 +24,7 @@ body header {
     position: absolute;
     width: 100%;
     background: linear-gradient(rgb(0, 0, 0, 0.7) 55%, rgba(0, 0, 0, 0));
+    z-index: 1;
 }
 header nav {
     position: relative;
@@ -55,19 +56,39 @@ header nav div.botoes button {
     width: 148px;
     height: 32px;
     margin-right: 18px;
-    height: 2.2em;
+    height: 2.4em;
     color: #fff;
     border-radius: 4px;
 }
 
 header nav div.botoes .botao_1 {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     width: 22em;
     background-color: rgba(22,22,22,0.7);
-    border: 1px solid rgba(255,255,255,0.7);
+    border: none;
 }
+/* Img Globo */
+header nav div.botoes .botao_1 img.globo {
+    position: absolute;
+    margin-left: 1em;
+    z-index: 2;
+}
+/* Select */
+header nav div.botoes .botao_1 select {
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22,22,22,0.7);
+    color: #fff;
+    border-radius: 4px;
+    padding-left: 0.8em;
+}
+
+
+
 .botao_1, .botao_2 {
     font-weight: 600;
 }
@@ -105,6 +126,7 @@ header nav div.botoes .botao_1 img {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 3.4rem;
     font-weight: 900;
+    margin-top: 1em;
 }
 .section_1 .main_section > h2 {
     font-family: 'Outfit', sans-serif;
@@ -122,16 +144,22 @@ header nav div.botoes .botao_1 img {
 }
 .section_1 .main_section .formulario form {
     margin: 12px 0 0 -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .section_1 .main_section .formulario form .form_box {
     height: 3.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 4px;
 }
 .section_1 .main_section .formulario form input {
     width: 24rem;
     background-color: rgba(22, 22, 22, 0.7);
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-right: 0.6em;
+    padding: 11px 1em 0 1em;
+    font-size: 18px;
 }
 .section_1 .main_section .formulario form button {
     width: 12rem;
@@ -139,4 +167,13 @@ header nav div.botoes .botao_1 img {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
+    border: none;
+}
+
+
+/* Hover efects */
+header nav div.botoes .botao_2:hover,
+.section_1 .main_section .formulario form button.form_box:hover {
+    background-color: rgb(202, 17, 27);
+    transition: 250ms;
 }
