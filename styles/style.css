@@ -177,3 +177,19 @@ header nav div.botoes .botao_2:hover,
     background-color: rgb(202, 17, 27);
     transition: 250ms;
 }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: rgb(65, 61, 61);
+    color: rgb(150, 150, 150);
+    width: 100%;
+    height: 4.5em;
+}
+footer h3 a {
+    color: rgb(229,9,20);
+}
